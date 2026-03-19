@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Pokedex</title>
+<link rel="stylesheet" href="estilo.css">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="icon" href="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<header class="header">
+  <img src="https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png" alt="Logo">
+  <h1>Pokedex</h1>
+</header>
+
+<div class="search-box">
+  <input type="text" id="search" placeholder="🔍 Buscar Pokémon...">
+</div>
+<div id="pokedex" class="grid"></div>
+
+
+<div id="regions">
+  <button onclick="carregarRegiao(1, 'kanto')">Kanto</button>
+  <button onclick="carregarRegiao(2, 'johto')">Johto</button>
+  <button onclick="carregarRegiao(3, 'hoenn')">Hoenn</button>
+</div>
+
+<footer class="footer">
+  <p>Developed by <strong>Felipe Jobim</strong></p>
+  
+  <a href="https://github.com/LipeJobim" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+  </a>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
